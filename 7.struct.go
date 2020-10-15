@@ -4,27 +4,43 @@ import(
 	"fmt"
 )
 
+type name string
 
 type User struct{
-	name string
+	first name
+	last name
 	id string
 	age int
 }
 
 func main(){
 
-	candidates:= []User{{"Ishan","99ef",23},{"ayush","99if",28}}
+	candidates:= []User{
+		{
+			first: "Ishan",
+			last: "tyagi",
+			id: "is23",
+			age: 22,
+	},
+		{
+			first: "ayush",
+			last: "tyagi",
+			age: 28,
+			id: "ty23",
+		},
+	}
 
 	fmt.Println(candidates)
-	rahul:= User{"Rahul","rrk",77}
+	rahul:= User{"Rahul","sharma","rrk",77}
 	fmt.Println(rahul)
 
 	rob := new(User)
-	rob.name= "Rob"
+	rob.first= "Rob"
+	rob.last= "Chaudhary"
 	rob.id= "iou"
 	rob.age= 19
 
 	fmt.Println(*rob)
-	fmt.Println((*rob).name)
+	fmt.Println((*rob).first)
 
 }

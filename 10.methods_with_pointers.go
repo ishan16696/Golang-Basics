@@ -9,7 +9,7 @@ type Point struct{
 	Y float32
 }
 
-func (p *Point) Translate(dx,dy float32) bool{
+func (p* Point) Translate(dx,dy float32){
 	p.X= p.X + dx
 	p.Y = p.Y +dy
 }

@@ -41,8 +41,8 @@ func main(){
 	var p* int // pointer to an int
 	
 	var sum int
-	p=&sum
-	*p,_= getSum(a,n)
+	p = &sum
+	*p,_ = getSum(a,n)
 	fmt.Println("Sum of array is: ",*p)
 
 	temp:=[4]float32{1800.99,33.33,77.11,100.77}

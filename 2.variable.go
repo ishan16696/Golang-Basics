@@ -7,7 +7,7 @@ import(
 
 var a int=23 // to declare the package level variable, a typeof global variable
 
-var I int =42 // its visibility is outside the package
+var I int =42 // its visibility is outside the package --> it is public
 
 func main(){
 

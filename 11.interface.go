@@ -1,10 +1,14 @@
 package main
 
+//A value can be more than one type
+
+
 import(
 	"fmt"
 	"math"
 )
 
+// <keyword> <identifier> <type>
 type shapes interface{
 	area() float64
 }

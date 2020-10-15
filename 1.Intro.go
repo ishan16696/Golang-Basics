@@ -7,8 +7,10 @@ import (
 
 func main(){
 	
+	//<keyword> <identifier> <type>
 	var name string
 	var age int
+
 	rollNo := 99
 
 	fmt.Scan(&name)
@@ -24,7 +26,7 @@ func main(){
 		fmt.Println("You are not an teenager")
 	}
 
-	fmt.Printf("Roll no is: %d\n", rollNo,rollNo)
+	fmt.Printf("Roll no is: %d\n", rollNo)
 
 
 }
