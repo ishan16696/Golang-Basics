@@ -43,4 +43,13 @@ func main(){
 	fmt.Println(*rob)
 	fmt.Println((*rob).first)
 
+	//pointer to structure
+	ishan:= &User{
+		first: "Ishan",
+		last: "Tyagi",
+		id: "07is",
+		age: 24,
+	}
+	fmt.Println(ishan)
+
 }

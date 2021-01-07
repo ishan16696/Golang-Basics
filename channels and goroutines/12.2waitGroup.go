@@ -23,7 +23,7 @@ func main(){
 		wg.Add(1)
 		go service(&wg,i)
 		go func(x int){
-			sendRPC(i)
+			sendRPC(x)
 			wg.Done()
 		}(i)
 		

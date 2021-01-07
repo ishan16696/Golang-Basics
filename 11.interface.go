@@ -33,10 +33,15 @@ func (r rectangle) area() (float64){
 
 func main(){
 	
-	c1:= circle{3.3}
-	r1:= rectangle{1.2,9.1}
-
-	s:=[]shapes{c1,r1}
+	s:= []shapes{
+		circle{
+			radius: 7.12,
+		},
+		rectangle{
+			height: 8,
+			width: 10,
+		},
+	}
 
 	fmt.Println(s[0].area())
 	fmt.Println(s[1].area())

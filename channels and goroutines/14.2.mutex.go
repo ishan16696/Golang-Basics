@@ -5,7 +5,6 @@ import(
 	"sync"
 	"time"
 	"math/rand"
-
 )
 
 func main(){

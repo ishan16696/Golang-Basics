@@ -4,7 +4,6 @@ package main
 
 import(
 	"fmt"
-
 )
 
 type name string
@@ -52,7 +51,7 @@ func main(){
 			first: "James",
 			last: "Bond",
 		},
-		ltk:true,
+		ltk: true,
 	}
 
 	sa2 := secretAgent{

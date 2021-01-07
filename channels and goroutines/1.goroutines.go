@@ -30,7 +30,7 @@ func main(){
 	a:= []int{4,23,1,10}
 	go getdigits(a)
 
-	time.Sleep(time.Millisecond)
+	time.Sleep(2*time.Millisecond)
 
 
 	fmt.Println("main execution stopped")

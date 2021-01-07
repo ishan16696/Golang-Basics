@@ -21,7 +21,7 @@ func main(){
 
 	//grades:= [4]int{33,10,99,12}
 
-	a1:= [5]string{"English","french","hindi","tamil","snaskrit"}
+	a1:= [5]string{"English","french","hindi","tamil","sanskrit"}
 
 	a2:=a1 // a copy of a1 is assigned to a2
 	a2[1]="german"
