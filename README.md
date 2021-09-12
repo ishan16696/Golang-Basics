@@ -45,6 +45,6 @@
      * Timer, Ticker pkg.
 
 ### net/http pkg
-   - http handler introduction
-   - rpc call introduction
+   - [http handler introduction](https://github.com/ishan16696/Golang-Basics/blob/main/http/1.http.go)
+   - [rpc call introduction](https://github.com/ishan16696/Golang-Basics/tree/main/http/rpc)
     
