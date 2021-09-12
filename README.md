@@ -43,4 +43,8 @@
      * Buffered channels, closing of channels, Bidirectional channels, Unidirectional channels.
      * Intro to goroutine, Mutex, WorkerPool, WaitGroup, select statement.
      * Timer, Ticker pkg.
+
+### net/http pkg
+   - http handler introduction
+   - rpc call introduction
     
