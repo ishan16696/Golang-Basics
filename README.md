@@ -13,6 +13,7 @@
    - [Working with Json](https://github.com/ishan16696/Golang-Basics/blob/main/10.json.go)
    - [defer usage](https://github.com/ishan16696/Golang-Basics/blob/main/11.defer.go)
    - [basics of error handling](https://github.com/ishan16696/Golang-Basics/blob/main/9.error.go)
+   - [recover from panic](https://github.com/ishan16696/Golang-Basics/blob/main/12.recover.go)
 
 ### Functions and Methods
    - [Functions](https://github.com/ishan16696/Golang-Basics/blob/main/functionAndmethods/3.function.go)
