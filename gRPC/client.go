@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// Set up a connection to the server
-	conn, err := grpc.Dial("localhost:1234", grpc.WithInsecure())
+	conn, err := grpc.Dial("localhost:9000", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
 	}
@@ -29,5 +29,5 @@ func main() {
 		log.Fatalf("could not greet: %v", err)
 	}
 
-	log.Printf("Client received: %s", response.GetMessage())
+	log.Printf("Client received: %s with number: %d", response.GetMessage(), response.GetNumber())
 }
