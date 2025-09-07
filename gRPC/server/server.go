@@ -18,7 +18,7 @@ type server struct {
 // SayHello implements the SayHello RPC method.
 func (s *server) SayHello(ctx context.Context, req *pb.HelloRequest) (*pb.HelloResponse, error) {
 	message := fmt.Sprintf("Hello Hii, %s!", req.GetName())
-	return &pb.HelloResponse{Message: message}, nil
+	return &pb.HelloResponse{Message: message, Number: 2}, nil
 }
 
 func main() {

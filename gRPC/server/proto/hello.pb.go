@@ -68,6 +68,7 @@ func (x *HelloRequest) GetName() string {
 type HelloResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Message       string                 `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
+	Number        uint32                 `protobuf:"varint,2,opt,name=number,proto3" json:"number,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -109,15 +110,23 @@ func (x *HelloResponse) GetMessage() string {
 	return ""
 }
 
+func (x *HelloResponse) GetNumber() uint32 {
+	if x != nil {
+		return x.Number
+	}
+	return 0
+}
+
 var File_hello_proto protoreflect.FileDescriptor
 
 const file_hello_proto_rawDesc = "" +
 	"\n" +
 	"\vhello.proto\x12\x05hello\"\"\n" +
 	"\fHelloRequest\x12\x12\n" +
-	"\x04name\x18\x01 \x01(\tR\x04name\")\n" +
+	"\x04name\x18\x01 \x01(\tR\x04name\"A\n" +
 	"\rHelloResponse\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage2@\n" +
+	"\amessage\x18\x01 \x01(\tR\amessage\x12\x16\n" +
+	"\x06number\x18\x02 \x01(\rR\x06number2@\n" +
 	"\x05Hello\x127\n" +
 	"\bSayHello\x12\x13.hello.HelloRequest\x1a\x14.hello.HelloResponse\"\x00B\tZ\a./protob\x06proto3"
 
